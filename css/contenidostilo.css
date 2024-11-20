@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+#textContent {
+    width: 100vw;
+    height: 600vh;
+    z-index: 1;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-shadow: 0px 0px;
+    text-align: left;
+    color: #C4C4B9;
+}
+.textos {
+    width: 40%;
+    padding: 5%;
+}
+
+#secMeta {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    background-image: url(../img/fondoMeta.png);
+    background-size: cover;
+    background-position: center center;
+}
+#secStart {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    background-image: url(../img/fondOva.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secOruga {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    background-image: url(../img/fondOruga.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secPupa {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center; 
+	justify-content: flex-end;
+	  background-image: url(../img/fondoCrisalida.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secMari {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-start;
+	  background-image: url(../img/fondoMariposa.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secVideos {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FBC53A;
+    float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-end;
+}
