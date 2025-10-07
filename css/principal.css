@@ -45,7 +45,7 @@ body {
 body header {
 	position: fixed;
 	top: 0px;
-	z-index: 13;
+	z-index: 5000;
 	width: 100%;
 }
 .navbar {
@@ -257,3 +257,4 @@ body header {
     padding: 0.5rem;
   }
 }/* Footer */
+
