@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+#textContent {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-shadow: 0px 0px;
+    text-align: left;
+    color: #C4C4B9;
+}
+.textos {
+    width: 40%;
+    padding: 5%;
+}
+
+#secMeta {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    background-image: url(../img/fondoMeta.png);
+    background-size: cover;
+    background-position: center center;
+}
+#secStart {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    background-image: url(../img/fondOva.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secOruga {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    background-image: url(../img/fondOruga.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secPupa {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center; 
+	justify-content: flex-end;
+	  background-image: url(../img/fondoCrisalida.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secMari {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-start;
+	  background-image: url(../img/fondoMariposa.png);
+    background-position: center center;
+    background-size: cover;
+}
+#secVideos {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#historias {
+    padding-top: 30px;
+    text-shadow: 5px 5px 23px #000000;
+}
+#historias img  {
+    padding: 15px;
+}
+#video-carousel h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+
+}
+footer {
+  background-color: #2B5246;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+
+
+/*segunda página*/
+main {
+	margin-top: 10rem;
+  padding: 10rem;
+	color: white;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077aa;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.texto {
+  flex: 1 1 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.imagenes {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imagenes img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+

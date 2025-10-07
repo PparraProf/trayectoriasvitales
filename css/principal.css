@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    background-color: #3B6759;
+    overflow-x: hidden;
+   font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    text-shadow: 0px 0px #DFDED7;
+    text-align: left;
+}
+.textos h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+.textos h2 {
+    font-size: 26px;
+}
+
+
+.animaContent {
+    display: grid;
+    overflow-x: hidden;
+    top: 0px;
+}
+
+.lineWater{
+	display: flex;
+	position: absolute;
+	top: -54px;
+	z-index: 10;
+	justify-self: center;
+	padding-left: 300px;
+	overflow-x: hidden;
+        }
+
+body header {
+	position: fixed;
+	top: 0px;
+	z-index: 13;
+	width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2B5246;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+}
+/*carrusel de videos*/
+/* 🔷 Sección general del carrusel */
+.video-carousel {
+    padding: 2rem 1rem 4rem;
+    text-align: center;
+    z-index: 3000 !important;
+    position: relative;
+    bottom: 5px;
+}
+
+.video-carousel h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* 🔷 Contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* 🔷 Pista que contiene los slides */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* 🔷 Cada slide contiene dos elementos */
+.carousel-slide {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 🔷 Caja individual de video o contenido */
+.video-box {
+  flex: 1;
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 🔷 Estilo para iframe de YouTube */
+.video-box iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  border: none;
+  object-fit: cover;
+}
+
+/* 🔷 Estilo para el vínculo que ocupa toda la casilla */
+.full-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+/* 🔷 Imagen dentro del vínculo */
+.full-link img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.full-link:hover {
+  transform: scale(1.02);
+}
+
+/* 🔷 Texto dentro del vínculo */
+.full-link p {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.video-box a p {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.video-box a  {
+    color: #FFFFFF;
+}
+
+
+/* 🔷 Botones de navegación */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* 🔷 Responsivo para pantallas pequeñas */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+    background-color: #19322A;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  .carousel-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    max-width: 100%;
+  }
+
+  .video-box iframe,
+  .full-link img {
+    height: 200px;
+  }
+
+  .full-link {
+    padding: 0.5rem;
+  }
+}/* Footer */
