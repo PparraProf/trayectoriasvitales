@@ -77,16 +77,6 @@
     background-position: center center;
     background-size: cover;
 }
-#secVideos {
-    width: 100vw;
-    height: 100vh;
-    float: left;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
 
 
 #historias {
@@ -118,21 +108,22 @@ footer {
 
 /*segunda página*/
 main {
-	margin-top: 10rem;
+	margin-top: 5rem;
   padding: 10rem;
 	color: white;
 }
 
 .intro h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #0077aa;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0077aa;
+    text-align: center;
 }
 
 .intro p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .contenido {
@@ -161,3 +152,33 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 768px) {
+	main {
+		padding: 1.5rem;
+		margin-top: 8rem;
+	}
+.textos {
+    width: 98%;
+}
+	#secMeta {
+    height: 50vh;
+	margin-top: 8rem;
+	background-position: center 60vh;
+}
+	#secStart {
+      height: 50vh;
+	background-position: center 24vh;
+}
+#secOruga {
+    height: 50vh;
+	background-position: center -16vh;
+}
+#secPupa {
+	height: 50vh;
+    background-image: none;
+}
+#secMari {
+  height: 50vh;
+  background-position: 150vw 17vh;
+}
+}
